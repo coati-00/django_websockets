@@ -130,8 +130,8 @@ INSTALLED_APPS = [
     'pageblocks',
     'quizblock',
     'gunicorn',
-    'django_websockets.main',
     'swampdragon',
+    'django_websockets.main',
 ]
 
 PAGEBLOCKS = ['pageblocks.TextBlock',
@@ -210,3 +210,4 @@ ACCOUNT_ACTIVATION_DAYS = 7
 # TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 DRAGON_URL = 'http://localhost:9999/'
+# DRAGON_URL = 'http://localhost:6379/'

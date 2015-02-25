@@ -1,5 +1,5 @@
 var TodoControllers = angular.module('TodoControllers', []);
-
+console.log("After initial TodoControllers");
 TodoControllers.controller('TodoListCtrl', ['$scope', '$dragon', function ($scope, $dragon) {
     $scope.todoList = {};
     $scope.todoItems = [];
@@ -28,7 +28,12 @@ TodoControllers.controller('TodoListCtrl', ['$scope', '$dragon', function ($scop
     });
 
     $scope.itemDone = function(item) {
+    	console.log("Inside dragon.onReady");
         item.done = true != item.done;
         $dragon.update('todo-item', item);
     }
 }]);
+console.log(TodoControllers.controller());
+console.log(TodoControllers.controller().TodoListCtrl);
+console.log(TodoControllers.controller());
+console.log("End JS");

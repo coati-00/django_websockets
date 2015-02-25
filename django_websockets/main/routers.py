@@ -10,9 +10,11 @@ class TodoListRouter(ModelRouter):
     model = TodoList
 
     def get_object(self, **kwargs):
+        print "Inside Routers"
         return self.model.objects.get(pk=kwargs['id'])
 
     def get_query_set(self, **kwargs):
+        print "Inside Routers"
         return self.model.objects.all()
 
 
@@ -22,9 +24,11 @@ class TodoItemRouter(ModelRouter):
     model = TodoItem
 
     def get_object(self, **kwargs):
+        print "Inside Routers"
         return self.model.objects.get(pk=kwargs['id'])
 
     def get_query_set(self, **kwargs):
+        print "Inside Routers"
         return self.model.objects.filter(todo_list__id=kwargs['list_id'])
 
 

@@ -7,6 +7,24 @@
 {% if not request.user.is_anonymous %}
 <p>This project includes Pagetree by default.</p>
 
+{% verbatim %}
+<p>
+<div ng-controller="TodoListCtrl">
+    <h3>{{ todoList.name }}</h3>
+    <pre>{{ todoList.description }}</pre>
+
+    <ul>
+        <li ng-repeat="item in todoItems">
+            {{ item.text }}
+            <button type="button" ng-click="itemDone(item)">
+                check
+            </button>
+            <span ng-show="item.done">done!</span>
+        </li>
+    </ul>
+</div>
+{% endverbatim %}</p>
+
 <p>The first thing you'll want to do is go to
 	the <a href="/pages/edit/">Edit page</a> for the root node and add
 	some modules, child sections and content.</p>
