@@ -1,13 +1,14 @@
 {% load bootstrap3 %}
 {% load compress %}
+{% load static swampdragon_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
 	<title>django_websockets: {% block title %}{% endblock %}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="django_websockets">
-  <meta name="author" content="CCNMTL">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="django_websockets">
+    <meta name="author" content="CCNMTL">
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -21,11 +22,25 @@
 {% endcompress %}
 	<link rel="shortcut icon" href="{{STATIC_URL}}img/favicon.ico" type="image/x-icon" />
 	{% block css %}{% endblock %}
-  <script src="{{STATIC_URL}}js/jquery-1.11.1.min.js"></script>
+  <script src="{{STATIC_URL}}js/libraries/jquery-1.11.1.min.js"></script>
 
 	{% block feeds %}{% endblock %}
 </head>
 <body class="{% block bodyclass %}{% endblock %}" id="{% block bodyid %}{% endblock %}">
+
+<!-- AngularJS -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+
+{% swampdragon_settings %}
+<script type="text/javascript" src="{% static 'swampdragon/js/dist/swampdragon.min.js' %}"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}swampdragon/js/dist/datamapper.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}swampdragon/js/angular/services.js"></script>
+
+<!-- To-do app -->
+<script type="text/javascript" src="{{ STATIC_URL }}js/app.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/controllers.js"></script>
+
+
 <a class="sr-only" href="#content">Skip navigation</a>
 
 {% block topnavbar %}

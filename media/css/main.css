@@ -1,0 +1,231 @@
+html {
+	height: 100%;
+}
+
+body {
+  background-color: #eee;
+  height: 100%;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+body > .container {
+  background-color: #fff;
+  min-height: 75%;
+  padding-top: 75px;
+}
+
+footer {padding-top: 20px;}
+
+.jumbotron {background-image: url(../img/group.jpg); color: #fff;}
+
+#content {
+  min-height: 100%;
+}
+
+/* LOGIN PAGE */
+.login-description {
+    margin: 0px;
+    text-align: center;
+}
+
+.login-description h2 {
+    line-height: 1.3em;
+    display: block;
+}
+
+.loginbox-container {
+    float: right;
+    height: 265px;
+    margin-top: 0px;
+}
+
+.loginbox-container.columbia {
+    height: 300px;
+}
+.loginbox
+{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #999;
+    background-color: #fff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+.loginbox h2
+{
+    margin: 0 !important;
+    padding: 5px 10px !important;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    background: #e0e0e0;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    color: black;
+}
+.loginbox .content
+{
+    margin: 0;
+    padding: 5px;
+    border: 0;
+}
+
+.loginbox .seperator
+{
+    margin: 20px 0;
+    padding: 0;
+    border: 0;
+    border-top: 1px dotted #999;
+    background-color: #fff;
+}
+
+.loginbox .fieldwrapper
+{
+    margin: 0px;
+    padding: 0;
+    border: 0;
+}
+.loginbox .fieldwrapper label
+{
+    display: block;
+    font-weight: bold;
+    color: #666;
+    font-size: 12px;
+}
+
+.loginbox .fieldwrapper input {
+    margin: 2px 0;
+    padding: 3px;
+    border: 0;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    font: bold 12px;
+}
+
+.loginbox .fieldwrapper input:focus
+{
+    border: 1px solid #06f;
+    background-color: #fff;
+}
+
+.loginbox .regbutton
+{
+    cursor: pointer;
+    padding: 4px 17px;
+    margin: 0 0 10px 0px;
+    color: #000;
+    font-weight: normal;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left-color: #ccc;
+    border-right-color: #ccc;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e6e6e6));
+    background: -moz-linear-gradient(top, #fff, #e6e6e6);
+    font: bold 14px arial, helvetica, verdana, sans-serif !important;
+    text-transform: uppercase;
+}
+.loginbox .regbutton:hover
+{
+    border: 1px solid #999;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd));
+    background: -moz-linear-gradient(top, #fff, #ddd);
+}
+.loginbox .regbutton:active
+{
+    border: 1px solid #006666;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#669999));
+    background: -moz-linear-gradient(top, #fff, #669999);
+}
+
+.loginbox .smalltxt
+{
+    font-size: 11px;
+}
+
+.errornote {
+    background: url("/media/img/icon_alert.png") no-repeat 5px 5px #FFEBE8;
+    border: 1px solid #c00 !important;
+    display: block;
+    font-size: 11px !important;
+    margin: 0 0 10px 0;
+    padding: 5px 5px 5px 10px !important;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    line-height: 140%;
+}
+
+ul.side-nav {
+    margin-top: 20px;
+}
+
+ul.side-nav li li {
+    margin-left: -25px;
+}
+
+/* Overrides  */
+.col-md-2{
+    width: 36.666667%;
+}
+.col-md-10 {
+    width: 53.333333%;
+}
+
+ul.pager li.next a.disabled {
+        color: #999;
+        cursor: not-allowed;
+    }
+    
+ul.pager li.next a.disabled:active {
+    box-shadow: none;
+}
+.mceIframeContainer iframe{
+    width: 600px!important;
+    height: 600px!important;
+}
+
+.modal-dialog {
+    width: 676px!important;
+    margin: 30px auto;
+}
+
+/* Facilitator page */
+.library-item-name{
+    width: 250px;
+    height: 75px;   
+}
+input.library-item-submit{
+    display: block;
+}
+#library-add-form .modal-content{
+    padding: 15px;
+}
+.facilitator-usrnm{
+    font-weight: bold;
+}
+ul.gate-section-list{
+    list-style: none;
+}
+.gate-section{
+    float: left
+}
+.gate-button{
+    margin: 6px;
+}
+.glyphicon-trash, .glyphicon-edit{
+    cursor: pointer;
+}
+#library-item-view{
+    margin: 30px 0 0 0;
+}
+.has-error{
+    color:#a94442;
+}

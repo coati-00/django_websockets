@@ -206,3 +206,7 @@ LOGGING = {
 }
 
 ACCOUNT_ACTIVATION_DAYS = 7
+
+# TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+DRAGON_URL = 'http://localhost:9999/'
